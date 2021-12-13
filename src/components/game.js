@@ -6,6 +6,9 @@ import QuestionView from "./question-view";
 import { Alert } from "@mui/material";
 
 export default function Game(){
+    // ====================
+    // States 
+    // ====================
     const timeout = 60
     const [timer, setTimer] = useState(timeout)
     const [locked, setLocked] = useState(false)
@@ -14,13 +17,22 @@ export default function Game(){
     const [questionIndex, setIndex] = useState(0)
     const [finished, setFinished] = useState(false)
     const correctPoints = Math.round(100 / questions.length)
+
+    // ====================
+    // Lifecycle
+    // ====================
+
     useEffect(()=>{
         // Countdown Timer
         if(!locked && timer > 0) setTimeout(()=>{
             setTimer(timer - 1)
         },1000)
     }, [locked, timer, setTimer])
-  
+
+    // ====================
+    // Event Handlers
+    // ====================
+
     const correctHandler = () => {
         // Selected Correct Answer
         if(!locked){
@@ -49,10 +61,12 @@ export default function Game(){
             setLocked(false)
         },1500)
     }
+    // ====================
+    // Render
+    // ====================
     const progress = (questionIndex/questions.length) * 100
-        
     const render = finished ? 
-        <Ending score={score}/> :
+        <Ending score={score}/> : 
         !locked && (timer === 0) ? 
         <ErrorMessage/> :
         <QuestionView 
@@ -62,5 +76,6 @@ export default function Game(){
             message={message}
             progress={progress}
         />
-    return render 
+
+    return render
 }
