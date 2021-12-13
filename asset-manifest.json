@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/code-quizer/static/css/main.df92c399.chunk.css",
+    "main.js": "/code-quizer/static/js/main.c81995d8.chunk.js",
+    "main.js.map": "/code-quizer/static/js/main.c81995d8.chunk.js.map",
+    "runtime-main.js": "/code-quizer/static/js/runtime-main.204e3e57.js",
+    "runtime-main.js.map": "/code-quizer/static/js/runtime-main.204e3e57.js.map",
+    "static/js/2.08abcb49.chunk.js": "/code-quizer/static/js/2.08abcb49.chunk.js",
+    "static/js/2.08abcb49.chunk.js.map": "/code-quizer/static/js/2.08abcb49.chunk.js.map",
+    "static/js/3.8d797131.chunk.js": "/code-quizer/static/js/3.8d797131.chunk.js",
+    "static/js/3.8d797131.chunk.js.map": "/code-quizer/static/js/3.8d797131.chunk.js.map",
+    "index.html": "/code-quizer/index.html",
+    "static/css/main.df92c399.chunk.css.map": "/code-quizer/static/css/main.df92c399.chunk.css.map",
+    "static/js/2.08abcb49.chunk.js.LICENSE.txt": "/code-quizer/static/js/2.08abcb49.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.204e3e57.js",
+    "static/js/2.08abcb49.chunk.js",
+    "static/css/main.df92c399.chunk.css",
+    "static/js/main.c81995d8.chunk.js"
+  ]
+}
