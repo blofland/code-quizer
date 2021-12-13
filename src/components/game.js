@@ -51,12 +51,14 @@ export default function Game(){
     }
     const progress = (questionIndex/questions.length) * 100
         
-
-    return <QuestionView 
+    const render = !locked && (timer === 0) ? 
+        <ErrorMessage/> :
+        <QuestionView 
             question={questions[questionIndex]} 
             correctHandler={correctHandler}  
             incorrectHandler={incorrectHandler} 
             message={message}
             progress={progress}
         />
+    return render 
 }
