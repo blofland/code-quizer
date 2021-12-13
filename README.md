@@ -1,7 +1,7 @@
 # Code Quiz
 *By Boedi Lofland*
 
-Ready for a challenge?? Well you won't find it here! Enjoy this simple coding quize I developed to demonstrate a few things
+Ready for a challenge?? Well you won't find it here! Enjoy this simple coding quize I developed for demonstration.
 
 ---
 This application was made with React, which feauters a few components to run a quiz on a given topic. I created a custom question object that allows any type of multiple choice question, that will be rendered in random order. Afterwhich a score will be presented.
