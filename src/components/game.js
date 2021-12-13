@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import questions from "./questions";
 export default function Game(){
   const [timer, setTimer] = useState(timeout)
   useEffect(()=>{
