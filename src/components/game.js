@@ -51,7 +51,9 @@ export default function Game(){
     }
     const progress = (questionIndex/questions.length) * 100
         
-    const render = !locked && (timer === 0) ? 
+    const render = finished ? 
+        <Ending score={score}/> :
+        !locked && (timer === 0) ? 
         <ErrorMessage/> :
         <QuestionView 
             question={questions[questionIndex]} 
