@@ -4,8 +4,16 @@ import { useNavigate } from "react-router-dom"
 import highscores from "../utility/storage"
 import { Link } from "react-router-dom"
 export default function Ending({score}){
-    const [username, setUsername] = useState("")
     const navigate = useNavigate()
+    // ====================
+    // States
+    // ====================
+    const [username, setUsername] = useState("")
+    
+    // ====================
+    // Handlers
+    // ====================
+    
     function submitHandler(e){
         e.preventDefault()
         const scores = highscores.get()
@@ -17,6 +25,9 @@ export default function Ending({score}){
         navigate("/scores")
 
     }
+    // ====================
+    // Variables
+    // ====================
     const message = (score <= 25) ? 
         "Have you even heard of Google?" : 
         (score <= 50) ? 
